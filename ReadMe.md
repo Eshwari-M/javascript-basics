@@ -9,7 +9,7 @@ This repository contains JavaScript exercises and examples completed as part of 
 - `console.log()`
 - `alert()`
 - Variables (`var`, `let`, `const`)
-- Data Types
+- Data Types (`string`, `number`, `boolean`, `null`, `undefined`)
 - `typeof` Operator
 
 ## Technologies Used
