@@ -1,4 +1,4 @@
-console.timeLog("Functions in JS");
+/* console.timeLog("Functions in JS");
 let s1=45000;
 let b1=10000;
 console.log(s1+b1);
@@ -71,4 +71,41 @@ function totalSalary(basicSalary,bonus) {
 let basicSalary=Number(prompt("Enter basic salary:"));
 let bonus=Number(prompt("Enter bonus:"));
 console.log("Total Salary =",totalSalary(basicSalary,bonus));
+ */
 
+//arrow function
+function salCut(reduced){
+    console.log(reduced+" has been deducted from your salary.");
+}
+salCut(3567);
+let sals=(deduct)=>deduct+" has been deducted";
+console.log(sals(3564));
+
+/* function square(x){
+    console.log(x**x);
+}
+square(3)
+const square=(x)=>x*x;
+console.log(sqr(2,3));
+
+//general
+function empDetails(name,designation){
+    console.log(
+        "Employee Name is ",
+        name,
+        " and his designation is ",
+        designation,
+    );
+}
+empDetails("Dhanush","Developer");
+let empData=(name,designation)=>
+    "Employee name is "+name+" and his designation is "+designation;
+console.log(empData("Abhishek","Developer")); */
+
+//salary
+let final=(base,bonus)=>base+bonus;
+console.log("Final Salary is = ",final(50000,5000));
+
+//multiplication
+let mul=(x,y,z)=>x*y*z;
+console.log("Result = ", mul(3,2,4));
