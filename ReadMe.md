@@ -54,6 +54,17 @@ This repository contains JavaScript exercises and examples completed as part of 
 - `for...of` Loop
 - Checking Email IDs using `includes()`
 
+### Functions
+
+- Function Declaration
+- Function Calls
+- Parameters and Arguments
+- Functions with No Parameters
+- Functions with Parameters
+- `return` Statement
+- Using `console.log()` with Functions
+- Calling Functions with Different Arguments
+
 ## Technologies Used
 
 - HTML5
