@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="text-align:center;">
+    <div>
+        <h1 style="color:green;">
+            ETHNUS
+        </h1>
+        <p>Click on the button to see image</p>
+        <img id="image">
+    </div>
+    <button type="button" onclick="show()" id="btnID">
+        Show image
+    </button>
+    <br><br>
+
+    <!-- Cube -->
+    <form>
+        Enter No:<input type="text" id="number" name="number">
+        <br><br>
+        <input type="button" value="Cube" onclick="getcube()">
+    </form>
+    <br>
+
+    <!-- Gender -->
+    <form>
+        Male:<input type="radio" name="gender" value="male">
+        Female:<input type="radio" name="gender" value="female">
+        <br><br>
+        <input type="button" onclick="totalelements()" value="Total Genders">
+    </form>
+
+     <!-- Paragraphs -->
+    <p>This is a paragraph</p>
+    <p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>
+    <p>Let's see the simple example</p>
+
+    <button onclick="countpara()">Count Paragraph</button>
+
+    <script>
+        // Show Image
+        function show() {
+            let image = document.getElementById("image");
+            image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ls6zmfe4W77d4kGd_bOqBTshUthYz1bdhptyAzVfvQ&s=10";
+            document.getElementById("btnID").style.display = "none";
+        }
+
+        // Find Cube
+        function getcube() {
+            var number = document.getElementById("number").value;
+            alert(number * number * number);
+        }
+
+        // Count Gender Elements
+        function totalelements() {
+            var allgenders = document.getElementsByName("gender");
+            alert("Total Genders: " + allgenders.length);
+        }
+
+        // Count Paragraphs
+        function countpara() {
+            var totalpara = document.getElementsByTagName("p");
+
+            alert("Total p tags are: " + totalpara.length);
+        }
+    </script>
+</body>
+</html>

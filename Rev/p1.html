@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 1</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background-color: #e3f2fd; }
+        .box { background: white; padding: 20px; border-radius: 5px; }
+        .history-count { font-size: 28px; color: blue; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>📄 Page 1</h1>
+    
+    <p><strong>Current History Length:</strong></p>
+    <p class="history-count" id="demo"></p>
+    
+    <hr>
+    
+    <p>You are on <strong>Page 1</strong></p>
+    <p>Click the button below to go to Page 2</p>
+    
+    <a href="p2.html"><button style="padding: 10px 20px; font-size: 16px;">Go to Page 2 →</button></a>
+</div>
+
+<script>
+let length = history.length;
+document.getElementById("demo").innerHTML = length;
+</script>
+
+</body>
+</html>

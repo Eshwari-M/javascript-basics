@@ -1,4 +1,4 @@
-let empName="Dilshad";
+/* let empName="Dilshad";
 let empId="Eth002D";
 let Desg="Developer"
 
@@ -54,4 +54,50 @@ let movieBooking={
     }
 };
 console.log("Total Booking Cost = ",movieBooking.calculateTotal());
+ */
 
+//arrays+objects
+let employees=[
+    {
+        name:"Alice",
+        dept:"IT",
+        salary:45000,
+    },
+    {
+        name:"Bob",
+        dept:"IT",
+        salary:90000,
+    },
+    {
+        name:"Carol",
+        dept:"Dev",
+        salary:85000,
+    },
+    {
+        name:"David",
+        dept:"Sales",
+        salary:65000,
+    },
+];
+console.log(employees);
+console.log(employees[1]);
+console.log("Salary of Alice is = "+employees[0].salary);
+console.log("Salary of Alice is = ",employees[0]["salary"]);
+
+//for loop
+for(let i=0;i<employees.length;i++){
+    console.log(employees[i].name,employees[i].dept,employees[i].salary);
+}
+
+let emp2={name:"Eve",dept:"IT"};
+/* for (let i=0;i<emp2.length;i++){
+    console.log(emp2.i);
+} */
+
+for(const key in emp2){
+    console.log(`${key}:${emp2[key]}`);
+}
+let name="Raju";
+let age=13;
+console.log("Name of the person is ",name,"& age is",age);
+console.log(`Name of the person is ${name} & his age is ${age}`);
