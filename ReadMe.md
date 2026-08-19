@@ -74,6 +74,24 @@ This repository contains JavaScript exercises and examples completed as part of 
 * Changing image `src` using JavaScript
 * Changing element display using `.style.display`
 * Using `onclick` to call JavaScript functions
+* Accessing element properties using `.href`, `.target`, `.value`, `.type`, and `.disabled`
+* Accessing text node properties using `.nodeValue` and `.length`
+* `instanceof` Operator with DOM Elements
+* Understanding DOM inheritance using `HTMLAnchorElement`, `HTMLElement`, `Element`, `Node`, and `EventTarget`
+* `nodeType` Property
+* Element Nodes, Text Nodes, Comment Nodes, and Document Nodes
+* Creating comment nodes using `document.createComment()`
+* Checking node types using `nodeType`
+* Accessing text content using `.textContent`
+
+### Form Validation
+
+* Form Validation using JavaScript
+* Using `onsubmit` with forms
+* Validating required input fields
+* Validating Name, Email, Phone Number, Website, and Message fields
+* Using `return false` to prevent form submission
+* Using `return true` for successful form submission
 
 ## Technologies Used
 
