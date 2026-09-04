@@ -1,0 +1,11 @@
+const map=new Map();
+map.set('Chess','Board Game');
+map.set('Minecraft','Video Game');
+map.set('Monopoly','Board Game');
+console.log(map.size); 
+console.log(map.get('Chess')); 
+map.delete('Monopoly');
+console.log(map.size); 
+console.log(map.has('Minecraft')); 
+console.log([...map.keys()]);
+console.log([...map.values()]);
