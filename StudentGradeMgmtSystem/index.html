@@ -57,7 +57,7 @@
             <div class="card-body">
 
                 <label class="form-label">Filter by Grade:</label>
-                <select id="gradeFilter" class="form-select filter-select">
+                <select id="gradeFilter" class="form-select filter-select" onchange="filterStudents(this.value)">
                     <option value="All">All Grades</option>
                     <option value="A">A</option>
                     <option value="B">B</option>

@@ -11,6 +11,13 @@ document.getElementById("studentForm").onsubmit=function(event){
         alert("Please enter student name");
         return;
     }
+    var existingStudent=students.find(function(student) {
+        return student.name==name;
+    });
+    if (existingStudent){
+        alert("Student already exists");
+        return;
+    }
     if (math<0||math>100||science<0||science>100||english<0||english>100||history<0||history>100){
         alert("Marks must be between 0 and 100");
         return;
